@@ -92,7 +92,7 @@ TaskManager(manageTasks)(0, null);
 
 直接运行main.js报错，调用栈的数目过大，目测和ExecuteTask有关
 
-![image-20240805192039282](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec CTF 2024\assets\image-20240805192039282.png)
+![image-20240805192039282](./assets/image-20240805192039282.png)
 
 比赛的时候脑袋没转过来，忽视了package.json里给的运行方法，node加上参数即可运行
 
@@ -208,7 +208,7 @@ flag：DEAD{CPS7yl3_4nd_3vn7_10op_h3ll}
 
 提供了elf文件，ida检查可以发现py标志，说明是pyinstaller创建的，pyinstxtractor脚本提取即可
 
-![image-20240805223211829](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240805223211829.png)
+![image-20240805223211829](./assets/image-20240805223211829.png)
 
 由图可知python版本3.10，因此uncompyle6无法使用，因此使用[pycdc](https://github.com/zrax/pycdc)
 
@@ -334,11 +334,11 @@ __int64 __fastcall sub_13ED(__int64 a1, const char *a2)
 
 这里为了更好判断函数，在linux中进行动态调试（windows上so文件没法调用），在import checker后断点并查看模块下的函数，如红框所示，可以看到多个类似A和X的函数
 
-![image-20240806151336003](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240806151336003.png)
+![image-20240806151336003](./assets/image-20240806151336003.png)
 
 经过ida逐个函数对比查看可知：上面11个特殊符号的函数对应下面红框里的函数，均为一个处理操作，如ror、rol、+=、-=、<<等
 
-![image-20240806174327996](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240806174327996.png)
+![image-20240806174327996](./assets/image-20240806174327996.png)
 
 定位check函数（&off_6500），可以看到4个qword数分别和64位数异或，只有全部相等if才成立，取t变量并逐元素赋值
 
@@ -689,7 +689,7 @@ v5 = PyBytes_FromStringAndSize(qword_6440[dword_6790], dword_6430[dword_6790]);
 // 成功时返回一个以字符串 v 的副本为值且长度为 len 的新字节串对象，失败时返回 NULL。 如果 v 为 NULL，则不初始化字节串对象的内容。
 ~~~
 
-![image-20240806221507040](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240806221507040.png)
+![image-20240806221507040](./assets/image-20240806221507040.png)
 
 qword_6440正好对应三组数据，dword_6430对应三个数据长度，idapython导出即可（这里分析可知dword_6790只能从1到3，没找到初始赋值的地方）
 
@@ -758,7 +758,7 @@ print(sub_1491(unk_3045))
 
 由于v15对应name，因此寻找对应的函数名
 
-![image-20240806231431139](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240806231431139.png)<img src="D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240806231405015.png" alt="image-20240806231405015" style="zoom:50%;" />
+![image-20240806231431139](./assets/image-20240806231431139.png)<img src="./assets/image-20240806231405015.png" alt="image-20240806231405015" style="zoom:50%;" />
 
 如图可以看到一一映射的函数，因此可以提前分析一波每个函数，然后取个新名，这里直接拿了zzre的代码
 
@@ -1257,7 +1257,7 @@ print(b''.join(flag))
 
 最开始没想到是输的慢还以为是有什么规律，看到群里有人说输快点就可以过才明白是干啥的，必须要借助自动化工具快速输入
 
-![image-20240807085054245](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807085054245.png)
+![image-20240807085054245](./assets/image-20240807085054245.png)
 
 ~~~python
 from pwn import *
@@ -1271,7 +1271,7 @@ for i in range(100):
 print(conn.recv())
 ~~~
 
-![image-20240807091846586](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807091846586.png)
+![image-20240807091846586](./assets/image-20240807091846586.png)
 
 ### flag_injection
 
@@ -1317,7 +1317,7 @@ if __name__ == "__main__":
 
 限制只能输入小写和下划线，正好对应SECRET_FLAG处理后只有小写和下划线。这里不要用windows的python测试，linux才可以显示报错提示
 
-![image-20240807095037505](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807095037505.png)
+![image-20240807095037505](./assets/image-20240807095037505.png)
 
 已知开头必然是`dead_`，可以拼接个长点的随机字符，就会报错提示真实flag的一部分
 
@@ -1485,7 +1485,7 @@ while True:
     print(conn.recvline())
 ~~~
 
-![image-20240807121130281](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807121130281.png)
+![image-20240807121130281](./assets/image-20240807121130281.png)
 
 现在复现才发现错的是题目得跑好几轮，而不是一轮才出结果，等于没做循环接收，太失误了
 
@@ -1495,7 +1495,7 @@ while True:
 
 给了个音频文件，很明显是音频隐写，做题的时候也发现了一短一长波形
 
-![image-20240807121610773](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807121610773.png)
+![image-20240807121610773](./assets/image-20240807121610773.png)
 
 ~~~python
 from scipy.io import wavfile
@@ -1572,17 +1572,17 @@ subprocess.check_output(["zip", "challenge.zip", "challenge.iso", "-P", FLAG])
 
 首先，虽然本题可以获取iso部分内容即明文，但是采用了Deflate压缩算法，跟据[bkcrack](https://github.com/kimci86/bkcrack/blob/master/example/tutorial.md#The%20not%20so%20easy%20way:%20deflated%20file)的解释，必须要知道压缩后的明文（比赛时候没注意，就一直在那错误地拿着iso文件0字节来明文攻击）
 
-![image-20240807144944504](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807144944504.png)
+![image-20240807144944504](./assets/image-20240807144944504.png)
 
 因此要做的是看iso压缩完后的共性（生成两个iso信息是有区别的，比如时间戳）
 
 zip压缩iso文件
 
-<img src="D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807145441711.png" alt="image-20240807145441711" style="zoom: 67%;" />
+<img src="./assets/image-20240807145441711.png" alt="image-20240807145441711" style="zoom: 67%;" />
 
 得到的两个zip对比文件数据区，可以发现都有32个0字节，但是不确定偏移地址可以尝试中间的0x70，16字节
 
-![image-20240807150820585](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807150820585.png)
+![image-20240807150820585](./assets/image-20240807150820585.png)
 
 ~~~
 .\bkcrack.exe -C .\challenge.zip -c challenge.iso -x 70 00000000000000000000000000000000
@@ -1590,7 +1590,7 @@ zip压缩iso文件
 
 -x跟的是偏移和字节，均为16进制
 
-![image-20240807151356651](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807151356651.png)
+![image-20240807151356651](./assets/image-20240807151356651.png)
 
 直接得到key，继续用bkcrack解密得到去除密码的zip
 
@@ -1598,11 +1598,11 @@ zip压缩iso文件
 .\bkcrack.exe -C .\challenge.zip -k 6b13ebc5 cc0be8ac 709e18f9 -D no_passwd.zip
 ~~~
 
-![image-20240807151846441](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807151846441.png)
+![image-20240807151846441](./assets/image-20240807151846441.png)
 
 解压hex编辑器查看即可看到flag：`DEAD{weird_how_this_encryption_is_the_default_in_2024}`
 
-![image-20240807152006143](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807152006143.png)
+![image-20240807152006143](./assets/image-20240807152006143.png)
 
 ## Crypto
 
@@ -1681,7 +1681,7 @@ c2=33905699797840568787362662028715578240048563666947195330850926166305552081119
 """
 ```
 
-![image-20240807201807612](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807201807612.png)
+![image-20240807201807612](./assets/image-20240807201807612.png)
 
 可以直接模2的400次方，结果很小可以直接factordb分解，直接分出来一个300位的q，然后就可以求出p，进而求解m
 
@@ -1744,7 +1744,7 @@ iv = b'+\xd5}\xd8\xa7K\x88j\xb5\xf7\x8b\x95)n53'
 '''
 ~~~
 
-统计发现counts里89个，可打印字符100个，同时合理猜测pl里尽可能没有13的倍数（8个），防止assert里左边的出现多个13导致模结果为0，此时字符范围缩为92，问题复杂度转为$C_{92}^{4}$
+统计发现counts里89个，可打印字符100个，同时合理猜测pl里尽可能没有13的倍数（8个），防止assert里左边的出现多个13导致模结果为0，此时字符范围缩为92，问题复杂度转为$`C_{92}^{4}`$
 
 直接贴个其他wp的代码，重点是学习思路思维
 
@@ -1785,9 +1785,9 @@ for perm in Combinations([ord(i) for i in sorted(printable) if ord(i)%13 != 0], 
 
 直接shodan搜，人麻了，忘记了这个工具
 
-<img src="D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\windows server.jpg" style="zoom: 33%;" />
+<img src="./assets/windows server.jpg" style="zoom: 33%;" />
 
-![image-20240807230306001](D:\LearnigForCyberSecurity\CTF\CTF-Writeups\DeadSec_CTF_2024\assets\image-20240807230306001.png)
+![image-20240807230306001](./assets/image-20240807230306001.png)
 
 ### Who is that man?
 
@@ -1806,7 +1806,7 @@ for perm in Combinations([ord(i) for i in sorted(printable) if ord(i)%13 != 0], 
 
 国外账号老被封，不太好复现
 
-1. https://whatsmyname.app/上找"Calista Diamante"
+1. `https://whatsmyname.app/` 上找"Calista Diamante"
 2. 在推特上找@c411sta
 
 ...
