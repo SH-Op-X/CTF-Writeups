@@ -1,0 +1,9 @@
+{
+  "name": "JavaCPScript",
+  "version": "1.0.0",
+  "description": "Mutex in JavaCPScript",
+  "scripts": {
+    "release": "node --stack-size=1000000000 main.js",
+    "debug": "node --stack-size=1000000000 --trace-event-categories node.async_hooks,node.promises main.js"
+  }
+}
