@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Flag Machine</title>
+	</head>
+	<body style="font-size:30px; text-align:center">
+		<div>
+			watch an ad to receive flag points (you get the flag once you get 1e18 points):
+			<button onclick="getpoints();">get 1 flag point</button><br>
+			you have: <span id="pts">0</span> out of 1e18 points
+		</div>
+		<div id="flag" hidden>
+			<div style="position:absolute;left:0px">L</div>
+			<div style="position:absolute;left:15px">I</div>
+			<div style="position:absolute;left:30px">T</div>
+			<div style="position:absolute;left:45px">C</div>
+			<div style="position:absolute;left:60px">T</div>
+			<div style="position:absolute;left:75px">F</div>
+			<div style="position:absolute;left:90px">{</div>
+			
+		</div>
+		<script src="revsite2.js"></script>
+		<script>
+			for(let i = 33; i <= 125; i++){
+				let chr = String.fromCharCode(i);
+				let child = document.createElement("div");
+				child.id = chr;
+				child.innerHTML = chr;
+				child.style.position="absolute";
+				child.style.textAlign="center";
+				child.style.left="1000px";
+				document.getElementById("flag").appendChild(child);
+			}
+			let visit_ad = Module.cwrap("visit_ad", null, []);
+			function getpoints(){
+				visit_ad();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #fcacdf; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ff0073;
+        }
+        p {
+            color: #ff0073; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 297px;
+            width: 927px;
+            position: relative;
+        }
+
+        .form-container {
+            max-width: 300px;
+            padding: 20px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative; 
+            z-index: 2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="password"] {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #fc59a2; 
+            color: #FFF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f93479;
+        }
+
+        .kirby-image {
+            height: 200%;
+            width: auto;
+            position: absolute;
+            bottom: -110px;
+            left: 55px;
+            transform: rotate(5deg);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome back kirby :33</h1>
+    <p>we will wait for u as u take ur time entering ur 7 character password</p>
+    
+    <div class="container">
+        <img src="/static/kirby.png" class="kirby-image">
+        <div class="form-container">
+            <form action="/" method="POST">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Login">
+            </form>
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
