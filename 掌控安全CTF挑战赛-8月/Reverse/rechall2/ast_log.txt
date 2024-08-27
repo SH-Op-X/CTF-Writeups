@@ -1,0 +1,1020 @@
+F:\anaconda\envs\zkaq\python.exe D:\LearnigForCyberSecurity\CTF\CTF-Writeups\掌控安全CTF挑战赛-8月\Reverse\rechall2\chall.py 
+Module(
+    body=[
+        ImportFrom(
+            module='types',
+            names=[
+                alias(name='FunctionType')],
+            level=0),
+        ImportFrom(
+            module='types',
+            names=[
+                alias(name='CodeType')],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var0', ctx=Store())],
+            value=Call(
+                func=Name(id='CodeType', ctx=Load()),
+                args=[
+                    Constant(value=1),
+                    Constant(value=0),
+                    Constant(value=0),
+                    Constant(value=1),
+                    Constant(value=13),
+                    Constant(value=3),
+                    Constant(value=b'\x97\x00t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x04\x00\x00\x00\x00\x00\x00\x00\x00|\x00t\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00S\x00'),
+                    Tuple(elts=(<ast.Constant object at 0x0000019AC1FBCE20>,), ctx=Load()),
+                    Tuple(elts=(<ast.Constant object at 0x0000019AC1FBCEB0>, <ast.Constant object at 0x0000019AC1FBCEE0>, <ast.Constant object at 0x0000019AC1FBCF10>, <ast.Constant object at 0x0000019AC1FBCF40>, <ast.Constant object at 0x0000019AC1FBCF70>, <ast.Constant object at 0x0000019AC1FBCFA0>, <ast.Constant object at 0x0000019AC1FBCFD0>), ctx=Load()),
+                    Tuple(elts=(<ast.Constant object at 0x0000019AC1FBD060>,), ctx=Load()),
+                    Constant(value='Liang ge ren xiang biao da de han yi ne, shi'),
+                    Constant(value='Wo xi huan ni, Ni xi huan wo'),
+                    Constant(value='Dan shi ne, hui yan 13 ji'),
+                    Constant(value=1),
+                    Constant(value=b'\x02\x01'),
+                    Constant(value=b'')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var1', ctx=Store())],
+            value=Call(
+                func=Name(id='globals', ctx=Load()),
+                args=[],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var2', ctx=Store())],
+            value=Call(
+                func=Name(id='FunctionType', ctx=Load()),
+                args=[
+                    Name(id='_var0', ctx=Load()),
+                    Name(id='_var1', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var3', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],   # builtins
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var4', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'str.encode')],   # str.encode
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var3', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var4', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var5', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var6', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'input')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var5', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var6', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var7', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var6', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Constant(value='Tell me your answer >')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var8', ctx=Store())],     # 输入str.encode后给_var8，再取len，再randbytes
+            value=Call(
+                func=Name(
+                    id=Name(id='str.encode', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var7', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var9', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'random')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var10', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'seed')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var9', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var10', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var11', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var12', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'str.encode')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var11', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var12', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var13', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var12', ctx=Load()),   # encode完作为seed值初始化random
+                    ctx=Load()),
+                args=[
+                    Constant(value='D0_Y0u_Kn0w_Wh4t_th3_D0oR_Th1s_K3y_Op3ns?')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var14', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var10', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var13', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var15', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'random')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var16', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'randbytes')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var15', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var16', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var17', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var18', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'len')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var17', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var18', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var19', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var18', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var8', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var20', ctx=Store())],    # randbytes()
+            value=Call(
+                func=Name(
+                    id=Name(id='_var16', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var19', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var21', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var22', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var21', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var22', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var23', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var24', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__xor__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var23', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var24', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var25', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var26', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var25', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var26', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var27', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var28', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__and__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var27', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var28', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var29', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var30', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var29', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var30', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var31', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var32', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__or__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var31', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var32', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var33', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var34', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var33', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var34', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var35', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var36', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__lshift__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var35', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var36', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var37', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var38', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'list.__mul__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var37', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var38', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var39', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var40', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'len')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var39', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var40', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var41', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var40', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var8', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var42', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var38', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    List(
+                        elts=[
+                            Constant(value=4)],
+                        ctx=Load()),
+                    Name(id='_var41', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var43', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var34', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='_var36', ctx=Load()),
+                        ctx=Load()),
+                    Name(id='_var20', ctx=Load()),
+                    Name(id='_var42', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var44', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var45', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var44', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var45', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var46', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var47', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__rshift__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var46', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var47', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var48', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var49', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'list.__mul__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var48', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var49', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var50', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var51', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'len')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var50', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var51', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var52', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var51', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var8', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var53', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var49', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    List(
+                        elts=[
+                            Constant(value=4)],
+                        ctx=Load()),
+                    Name(id='_var52', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var54', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var45', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='_var47', ctx=Load()),
+                        ctx=Load()),
+                    Name(id='_var20', ctx=Load()),
+                    Name(id='_var53', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var55', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var30', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='_var32', ctx=Load()),
+                        ctx=Load()),
+                    Name(id='_var43', ctx=Load()),
+                    Name(id='_var54', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var56', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var57', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'list.__mul__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var56', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var57', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var58', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var59', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'len')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var58', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var59', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var60', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='len', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var8', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var61', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='list.__mul__', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    List(
+                        elts=[
+                            Constant(value=255)],
+                        ctx=Load()),
+                    Name(id='_var60', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var62', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='map', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='int.__and__', ctx=Load()),
+                        ctx=Load()),
+                    Name(id='_var55', ctx=Load()),
+                    Name(id='_var61', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var63', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='map', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='int.__xor__', ctx=Load()),
+                        ctx=Load()),
+                    Name(id='_var8', ctx=Load()),
+                    Name(id='_var62', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var64', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var65', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'list.__getitem__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var64', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var65', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var66', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var67', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__or__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var66', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var67', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var68', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var69', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'any')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var68', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var69', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var70', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var71', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'map')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var70', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var71', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var72', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var73', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__xor__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var72', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var73', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var74', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var71', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(
+                        id=Name(id='int.__xor__', ctx=Load()),
+                        ctx=Load()),
+                    List(
+                        elts=[
+                            Constant(value=235),
+                            Constant(value=128),
+                            Constant(value=107),
+                            Constant(value=33),
+                            Constant(value=10),
+                            Constant(value=206),
+                            Constant(value=158),
+                            Constant(value=151),
+                            Constant(value=158),
+                            Constant(value=88),
+                            Constant(value=130),
+                            Constant(value=190),
+                            Constant(value=155),
+                            Constant(value=207),
+                            Constant(value=94),
+                            Constant(value=28),
+                            Constant(value=65),
+                            Constant(value=9),
+                            Constant(value=102),
+                            Constant(value=5),
+                            Constant(value=241),
+                            Constant(value=184),
+                            Constant(value=74),
+                            Constant(value=129),
+                            Constant(value=3),
+                            Constant(value=46),
+                            Constant(value=216),
+                            Constant(value=20),
+                            Constant(value=112),
+                            Constant(value=95),
+                            Constant(value=201),
+                            Constant(value=86),
+                            Constant(value=215),
+                            Constant(value=220),
+                            Constant(value=220),
+                            Constant(value=7),
+                            Constant(value=45),
+                            Constant(value=81),
+                            Constant(value=145),
+                            Constant(value=229),
+                            Constant(value=152),
+                            Constant(value=241),
+                            Constant(value=4),
+                            Constant(value=135),
+                            Constant(value=16),
+                            Constant(value=118),
+                            Constant(value=102),
+                            Constant(value=144)],
+                        ctx=Load()),
+                    Name(id='_var63', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var75', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='any', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var74', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var76', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var77', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'int.__ne__')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var76', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var77', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var78', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'builtins')],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var79', ctx=Store())],
+            value=Call(
+                func=Name(id='_var2', ctx=Load()),
+                args=[
+                    Constant(value=b'len')],
+                keywords=[])),
+        ImportFrom(
+            module=Name(id='_var78', ctx=Load()),
+            names=[
+                alias(
+                    name=Name(id='_var79', ctx=Load()))],
+            level=0),
+        Assign(
+            targets=[
+                Name(id='_var80', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var79', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var20', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var81', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var77', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var80', ctx=Load()),
+                    Constant(value=48)],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var82', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var67', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    Name(id='_var75', ctx=Load()),
+                    Name(id='_var81', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='_var83', ctx=Store())],
+            value=Call(
+                func=Name(
+                    id=Name(id='_var65', ctx=Load()),
+                    ctx=Load()),
+                args=[
+                    List(
+                        elts=[
+                            Constant(value='Good job! You made it!'),
+                            Constant(value='Nah, dont give up!')],
+                        ctx=Load()),
+                    Name(id='_var82', ctx=Load())],
+                keywords=[])),
+        Assign(
+            targets=[
+                Name(id='result', ctx=Store())],
+            value=Name(id='_var83', ctx=Load()))],
+    type_ignores=[])
+
+Process finished with exit code 0

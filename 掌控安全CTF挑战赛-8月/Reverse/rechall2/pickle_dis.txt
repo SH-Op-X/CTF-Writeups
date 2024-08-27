@@ -1,0 +1,432 @@
+    0: \x80 PROTO      4
+    2: c    GLOBAL     'types FunctionType'
+   22: c    GLOBAL     'types CodeType'
+   38: (    MARK
+   39: I        INT        1
+   42: I        INT        0
+   45: I        INT        0
+   48: I        INT        1
+   51: I        INT        13
+   55: I        INT        3
+   58: C        SHORT_BINBYTES b'\x97\x00t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x04\x00\x00\x00\x00\x00\x00\x00\x00|\x00t\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00S\x00'
+  242: (        MARK
+  243: N            NONE
+  244: t            TUPLE      (MARK at 242)
+  245: (        MARK
+  246: V            UNICODE    'bytes'
+  253: V            UNICODE    'decode'
+  261: V            UNICODE    'map'
+  266: V            UNICODE    'int'
+  271: V            UNICODE    '__add__'
+  280: V            UNICODE    'range'
+  287: V            UNICODE    'len'
+  292: t            TUPLE      (MARK at 245)
+  293: (        MARK
+  294: \x8c         SHORT_BINUNICODE 'BanG Its Mygo!!!'
+  312: t            TUPLE      (MARK at 293)
+  313: V        UNICODE    'Liang ge ren xiang biao da de han yi ne, shi'
+  359: V        UNICODE    'Wo xi huan ni, Ni xi huan wo'
+  389: V        UNICODE    'Dan shi ne, hui yan 13 ji'
+  416: I        INT        1
+  419: C        SHORT_BINBYTES b'\x02\x01'
+  423: C        SHORT_BINBYTES b''
+  425: t        TUPLE      (MARK at 38)
+  426: R    REDUCE
+  427: c    GLOBAL     'builtins globals'
+  445: )    EMPTY_TUPLE
+  446: R    REDUCE
+  447: \x86 TUPLE2
+  448: R    REDUCE
+  449: \x94 MEMOIZE    (as 0)
+  450: 0    POP
+  451: g    GET        0
+  454: C    SHORT_BINBYTES b'btgipdhl'
+  464: \x85 TUPLE1
+  465: R    REDUCE
+  466: g    GET        0
+  469: C    SHORT_BINBYTES b'ssp+ai]h\\\\'
+  481: \x85 TUPLE1
+  482: R    REDUCE
+  483: \x93 STACK_GLOBAL
+  484: g    GET        0
+  487: C    SHORT_BINBYTES b'btgipdhl'
+  497: \x85 TUPLE1
+  498: R    REDUCE
+  499: g    GET        0
+  502: C    SHORT_BINBYTES b'imnrp'
+  509: \x85 TUPLE1
+  510: R    REDUCE
+  511: \x93 STACK_GLOBAL
+  512: V    UNICODE    'Tell me your answer >'
+  535: \x85 TUPLE1
+  536: R    REDUCE
+  537: \x85 TUPLE1
+  538: R    REDUCE
+  539: \x94 MEMOIZE    (as 1)
+  540: 0    POP
+  541: g    GET        0
+  544: C    SHORT_BINBYTES b'r`lakh'
+  552: \x85 TUPLE1
+  553: R    REDUCE
+  554: g    GET        0
+  557: C    SHORT_BINBYTES b'sdca'
+  563: \x85 TUPLE1
+  564: R    REDUCE
+  565: \x93 STACK_GLOBAL
+  566: g    GET        0
+  569: C    SHORT_BINBYTES b'btgipdhl'
+  579: \x85 TUPLE1
+  580: R    REDUCE
+  581: g    GET        0
+  584: C    SHORT_BINBYTES b'ssp+ai]h\\\\'
+  596: \x85 TUPLE1
+  597: R    REDUCE
+  598: \x93 STACK_GLOBAL
+  599: V    UNICODE    'D0_Y0u_Kn0w_Wh4t_th3_D0oR_Th1s_K3y_Op3ns?'
+  642: \x85 TUPLE1
+  643: R    REDUCE
+  644: \x85 TUPLE1
+  645: R    REDUCE
+  646: 0    POP
+  647: g    GET        0
+  650: C    SHORT_BINBYTES b'r`lakh'
+  658: \x85 TUPLE1
+  659: R    REDUCE
+  660: g    GET        0
+  663: C    SHORT_BINBYTES b'r`la^tn^k'
+  674: \x85 TUPLE1
+  675: R    REDUCE
+  676: \x93 STACK_GLOBAL
+  677: g    GET        0
+  680: C    SHORT_BINBYTES b'btgipdhl'
+  690: \x85 TUPLE1
+  691: R    REDUCE
+  692: g    GET        0
+  695: C    SHORT_BINBYTES b'ldl'
+  700: \x85 TUPLE1
+  701: R    REDUCE
+  702: \x93 STACK_GLOBAL
+  703: g    GET        1
+  706: \x85 TUPLE1
+  707: R    REDUCE
+  708: \x85 TUPLE1
+  709: R    REDUCE
+  710: \x94 MEMOIZE    (as 2)
+  711: 0    POP
+  712: g    GET        0
+  715: C    SHORT_BINBYTES b'btgipdhl'
+  725: \x85 TUPLE1
+  726: R    REDUCE
+  727: g    GET        0
+  730: C    SHORT_BINBYTES b'm`n'
+  735: \x85 TUPLE1
+  736: R    REDUCE
+  737: \x93 STACK_GLOBAL
+  738: g    GET        0
+  741: C    SHORT_BINBYTES b'btgipdhl'
+  751: \x85 TUPLE1
+  752: R    REDUCE
+  753: g    GET        0
+  756: C    SHORT_BINBYTES b'imr+[ZrhjVU'
+  769: \x85 TUPLE1
+  770: R    REDUCE
+  771: \x93 STACK_GLOBAL
+  772: g    GET        1
+  775: g    GET        0
+  778: C    SHORT_BINBYTES b'btgipdhl'
+  788: \x85 TUPLE1
+  789: R    REDUCE
+  790: g    GET        0
+  793: C    SHORT_BINBYTES b'm`n'
+  798: \x85 TUPLE1
+  799: R    REDUCE
+  800: \x93 STACK_GLOBAL
+  801: g    GET        0
+  804: C    SHORT_BINBYTES b'btgipdhl'
+  814: \x85 TUPLE1
+  815: R    REDUCE
+  816: g    GET        0
+  819: C    SHORT_BINBYTES b'imr+[Z[g\\VU'
+  832: \x85 TUPLE1
+  833: R    REDUCE
+  834: \x93 STACK_GLOBAL
+  835: g    GET        0
+  838: C    SHORT_BINBYTES b'btgipdhl'
+  848: \x85 TUPLE1
+  849: R    REDUCE
+  850: g    GET        0
+  853: C    SHORT_BINBYTES b'm`n'
+  858: \x85 TUPLE1
+  859: R    REDUCE
+  860: \x93 STACK_GLOBAL
+  861: g    GET        0
+  864: C    SHORT_BINBYTES b'btgipdhl'
+  874: \x85 TUPLE1
+  875: R    REDUCE
+  876: g    GET        0
+  879: C    SHORT_BINBYTES b'imr+[ZikWV'
+  891: \x85 TUPLE1
+  892: R    REDUCE
+  893: \x93 STACK_GLOBAL
+  894: g    GET        0
+  897: C    SHORT_BINBYTES b'btgipdhl'
+  907: \x85 TUPLE1
+  908: R    REDUCE
+  909: g    GET        0
+  912: C    SHORT_BINBYTES b'm`n'
+  917: \x85 TUPLE1
+  918: R    REDUCE
+  919: \x93 STACK_GLOBAL
+  920: g    GET        0
+  923: C    SHORT_BINBYTES b'btgipdhl'
+  933: \x85 TUPLE1
+  934: R    REDUCE
+  935: g    GET        0
+  938: C    SHORT_BINBYTES b'imr+[Zfl``\\iSR'
+  954: \x85 TUPLE1
+  955: R    REDUCE
+  956: \x93 STACK_GLOBAL
+  957: g    GET        2
+  960: g    GET        0
+  963: C    SHORT_BINBYTES b'btgipdhl'
+  973: \x85 TUPLE1
+  974: R    REDUCE
+  975: g    GET        0
+  978: C    SHORT_BINBYTES b'lhqq*ZYfmcUT'
+  992: \x85 TUPLE1
+  993: R    REDUCE
+  994: \x93 STACK_GLOBAL
+  995: (    MARK
+  996: I        INT        4
+  999: l        LIST       (MARK at 995)
+ 1000: g    GET        0
+ 1003: C    SHORT_BINBYTES b'btgipdhl'
+ 1013: \x85 TUPLE1
+ 1014: R    REDUCE
+ 1015: g    GET        0
+ 1018: C    SHORT_BINBYTES b'ldl'
+ 1023: \x85 TUPLE1
+ 1024: R    REDUCE
+ 1025: \x93 STACK_GLOBAL
+ 1026: g    GET        1
+ 1029: \x85 TUPLE1
+ 1030: R    REDUCE
+ 1031: \x86 TUPLE2
+ 1032: R    REDUCE
+ 1033: \x87 TUPLE3
+ 1034: R    REDUCE
+ 1035: g    GET        0
+ 1038: C    SHORT_BINBYTES b'btgipdhl'
+ 1048: \x85 TUPLE1
+ 1049: R    REDUCE
+ 1050: g    GET        0
+ 1053: C    SHORT_BINBYTES b'm`n'
+ 1058: \x85 TUPLE1
+ 1059: R    REDUCE
+ 1060: \x93 STACK_GLOBAL
+ 1061: g    GET        0
+ 1064: C    SHORT_BINBYTES b'btgipdhl'
+ 1074: \x85 TUPLE1
+ 1075: R    REDUCE
+ 1076: g    GET        0
+ 1079: C    SHORT_BINBYTES b'imr+[Zll``\\iSR'
+ 1095: \x85 TUPLE1
+ 1096: R    REDUCE
+ 1097: \x93 STACK_GLOBAL
+ 1098: g    GET        2
+ 1101: g    GET        0
+ 1104: C    SHORT_BINBYTES b'btgipdhl'
+ 1114: \x85 TUPLE1
+ 1115: R    REDUCE
+ 1116: g    GET        0
+ 1119: C    SHORT_BINBYTES b'lhqq*ZYfmcUT'
+ 1133: \x85 TUPLE1
+ 1134: R    REDUCE
+ 1135: \x93 STACK_GLOBAL
+ 1136: (    MARK
+ 1137: I        INT        4
+ 1140: l        LIST       (MARK at 1136)
+ 1141: g    GET        0
+ 1144: C    SHORT_BINBYTES b'btgipdhl'
+ 1154: \x85 TUPLE1
+ 1155: R    REDUCE
+ 1156: g    GET        0
+ 1159: C    SHORT_BINBYTES b'ldl'
+ 1164: \x85 TUPLE1
+ 1165: R    REDUCE
+ 1166: \x93 STACK_GLOBAL
+ 1167: g    GET        1
+ 1170: \x85 TUPLE1
+ 1171: R    REDUCE
+ 1172: \x86 TUPLE2
+ 1173: R    REDUCE
+ 1174: \x87 TUPLE3
+ 1175: R    REDUCE
+ 1176: \x87 TUPLE3
+ 1177: R    REDUCE
+ 1178: g    GET        0
+ 1181: C    SHORT_BINBYTES b'btgipdhl'
+ 1191: \x85 TUPLE1
+ 1192: R    REDUCE
+ 1193: g    GET        0
+ 1196: C    SHORT_BINBYTES b'lhqq*ZYfmcUT'
+ 1210: \x85 TUPLE1
+ 1211: R    REDUCE
+ 1212: \x93 STACK_GLOBAL
+ 1213: (    MARK
+ 1214: I        INT        255
+ 1219: l        LIST       (MARK at 1213)
+ 1220: g    GET        0
+ 1223: C    SHORT_BINBYTES b'btgipdhl'
+ 1233: \x85 TUPLE1
+ 1234: R    REDUCE
+ 1235: g    GET        0
+ 1238: C    SHORT_BINBYTES b'ldl'
+ 1243: \x85 TUPLE1
+ 1244: R    REDUCE
+ 1245: \x93 STACK_GLOBAL
+ 1246: g    GET        1
+ 1249: \x85 TUPLE1
+ 1250: R    REDUCE
+ 1251: \x86 TUPLE2
+ 1252: R    REDUCE
+ 1253: \x87 TUPLE3
+ 1254: R    REDUCE
+ 1255: \x87 TUPLE3
+ 1256: R    REDUCE
+ 1257: \x94 MEMOIZE    (as 3)
+ 1258: 0    POP
+ 1259: g    GET        0
+ 1262: C    SHORT_BINBYTES b'btgipdhl'
+ 1272: \x85 TUPLE1
+ 1273: R    REDUCE
+ 1274: g    GET        0
+ 1277: C    SHORT_BINBYTES b'lhqq*ZY`]k_iY`QP'
+ 1295: \x85 TUPLE1
+ 1296: R    REDUCE
+ 1297: \x93 STACK_GLOBAL
+ 1298: (    MARK
+ 1299: V        UNICODE    'Good job! You made it!'
+ 1323: V        UNICODE    'Nah, dont give up!'
+ 1343: l        LIST       (MARK at 1298)
+ 1344: g    GET        0
+ 1347: C    SHORT_BINBYTES b'btgipdhl'
+ 1357: \x85 TUPLE1
+ 1358: R    REDUCE
+ 1359: g    GET        0
+ 1362: C    SHORT_BINBYTES b'imr+[ZikWV'
+ 1374: \x85 TUPLE1
+ 1375: R    REDUCE
+ 1376: \x93 STACK_GLOBAL
+ 1377: g    GET        0
+ 1380: C    SHORT_BINBYTES b'btgipdhl'
+ 1390: \x85 TUPLE1
+ 1391: R    REDUCE
+ 1392: g    GET        0
+ 1395: C    SHORT_BINBYTES b'amw'
+ 1400: \x85 TUPLE1
+ 1401: R    REDUCE
+ 1402: \x93 STACK_GLOBAL
+ 1403: g    GET        0
+ 1406: C    SHORT_BINBYTES b'btgipdhl'
+ 1416: \x85 TUPLE1
+ 1417: R    REDUCE
+ 1418: g    GET        0
+ 1421: C    SHORT_BINBYTES b'm`n'
+ 1426: \x85 TUPLE1
+ 1427: R    REDUCE
+ 1428: \x93 STACK_GLOBAL
+ 1429: g    GET        0
+ 1432: C    SHORT_BINBYTES b'btgipdhl'
+ 1442: \x85 TUPLE1
+ 1443: R    REDUCE
+ 1444: g    GET        0
+ 1447: C    SHORT_BINBYTES b'imr+[ZrhjVU'
+ 1460: \x85 TUPLE1
+ 1461: R    REDUCE
+ 1462: \x93 STACK_GLOBAL
+ 1463: (    MARK
+ 1464: I        INT        235
+ 1469: I        INT        128
+ 1474: I        INT        107
+ 1479: I        INT        33
+ 1483: I        INT        10
+ 1487: I        INT        206
+ 1492: I        INT        158
+ 1497: I        INT        151
+ 1502: I        INT        158
+ 1507: I        INT        88
+ 1511: I        INT        130
+ 1516: I        INT        190
+ 1521: I        INT        155
+ 1526: I        INT        207
+ 1531: I        INT        94
+ 1535: I        INT        28
+ 1539: I        INT        65
+ 1543: I        INT        9
+ 1546: I        INT        102
+ 1551: I        INT        5
+ 1554: I        INT        241
+ 1559: I        INT        184
+ 1564: I        INT        74
+ 1568: I        INT        129
+ 1573: I        INT        3
+ 1576: I        INT        46
+ 1580: I        INT        216
+ 1585: I        INT        20
+ 1589: I        INT        112
+ 1594: I        INT        95
+ 1598: I        INT        201
+ 1603: I        INT        86
+ 1607: I        INT        215
+ 1612: I        INT        220
+ 1617: I        INT        220
+ 1622: I        INT        7
+ 1625: I        INT        45
+ 1629: I        INT        81
+ 1633: I        INT        145
+ 1638: I        INT        229
+ 1643: I        INT        152
+ 1648: I        INT        241
+ 1653: I        INT        4
+ 1656: I        INT        135
+ 1661: I        INT        16
+ 1665: I        INT        118
+ 1670: I        INT        102
+ 1675: I        INT        144
+ 1680: l        LIST       (MARK at 1463)
+ 1681: g    GET        3
+ 1684: \x87 TUPLE3
+ 1685: R    REDUCE
+ 1686: \x85 TUPLE1
+ 1687: R    REDUCE
+ 1688: g    GET        0
+ 1691: C    SHORT_BINBYTES b'btgipdhl'
+ 1701: \x85 TUPLE1
+ 1702: R    REDUCE
+ 1703: g    GET        0
+ 1706: C    SHORT_BINBYTES b'imr+[Zh^WV'
+ 1718: \x85 TUPLE1
+ 1719: R    REDUCE
+ 1720: \x93 STACK_GLOBAL
+ 1721: g    GET        0
+ 1724: C    SHORT_BINBYTES b'btgipdhl'
+ 1734: \x85 TUPLE1
+ 1735: R    REDUCE
+ 1736: g    GET        0
+ 1739: C    SHORT_BINBYTES b'ldl'
+ 1744: \x85 TUPLE1
+ 1745: R    REDUCE
+ 1746: \x93 STACK_GLOBAL
+ 1747: g    GET        2
+ 1750: \x85 TUPLE1
+ 1751: R    REDUCE
+ 1752: I    INT        48
+ 1756: \x86 TUPLE2
+ 1757: R    REDUCE
+ 1758: \x86 TUPLE2
+ 1759: R    REDUCE
+ 1760: \x86 TUPLE2
+ 1761: R    REDUCE
+ 1762: .    STOP
+highest protocol among opcodes = 4
