@@ -1,0 +1,112 @@
+unsigned __int64 __fastcall generateMap(_QWORD *a1)
+{
+  __int64 v1; // rax
+  __int64 v2; // rax
+  __int64 v3; // rax
+  __int64 v4; // rax
+  __int64 v5; // rax
+  __int64 v6; // rax
+  __int64 v7; // rax
+  __int64 v8; // rax
+  __int64 v9; // rax
+  __int64 v10; // rax
+  __int64 v11; // rax
+  __int64 v12; // rax
+  __int64 v13; // rax
+  __int64 v14; // rax
+  __int64 v15; // rax
+  __int64 v16; // rax
+  __int64 v17; // rax
+  __int64 v18; // rax
+  __int64 v19; // rax
+  __int64 v20; // rax
+  __int64 v21; // rax
+  __int64 v22; // rax
+  __int64 v23; // rax
+  __int64 v24; // rax
+  __int64 v25; // rax
+  __int64 v26; // rax
+  char v28; // [rsp+17h] [rbp-9h] BYREF
+  unsigned __int64 v29; // [rsp+18h] [rbp-8h]
+
+  v29 = __readfsqword(0x28u);
+  v1 = std::vector<std::set<char>>::operator[](a1, 46LL);
+  v28 = 10;
+  std::set<char>::insert(v1, (__int64)&v28);
+  v2 = std::vector<std::set<char>>::operator[](a1, 95LL);
+  v28 = 72;
+  std::set<char>::insert(v2, (__int64)&v28);
+  v3 = std::vector<std::set<char>>::operator[](a1, 111LL);
+  v28 = 100;
+  std::set<char>::insert(v3, (__int64)&v28);
+  v4 = std::vector<std::set<char>>::operator[](a1, 105LL);
+  v28 = 125;
+  std::set<char>::insert(v4, (__int64)&v28);
+  v5 = std::vector<std::set<char>>::operator[](a1, 100LL);
+  v28 = 108;
+  std::set<char>::insert(v5, (__int64)&v28);
+  v6 = std::vector<std::set<char>>::operator[](a1, 100LL);
+  v28 = 117;
+  std::set<char>::insert(v6, (__int64)&v28);
+  v7 = std::vector<std::set<char>>::operator[](a1, 108LL);
+  v28 = 99;
+  std::set<char>::insert(v7, (__int64)&v28);
+  v8 = std::vector<std::set<char>>::operator[](a1, 101LL);
+  v28 = 97;
+  std::set<char>::insert(v8, (__int64)&v28);
+  v9 = std::vector<std::set<char>>::operator[](a1, 111LL);
+  v28 = 48;
+  std::set<char>::insert(v9, (__int64)&v28);
+  v10 = std::vector<std::set<char>>::operator[](a1, 108LL);
+  v28 = 107;
+  std::set<char>::insert(v10, (__int64)&v28);
+  v11 = std::vector<std::set<char>>::operator[](a1, 0LL);
+  v28 = 103;
+  std::set<char>::insert(v11, (__int64)&v28);
+  v12 = std::vector<std::set<char>>::operator[](a1, 107LL);
+  v28 = 46;
+  std::set<char>::insert(v12, (__int64)&v28);
+  v13 = std::vector<std::set<char>>::operator[](a1, 123LL);
+  v28 = 101;
+  std::set<char>::insert(v13, (__int64)&v28);
+  v14 = std::vector<std::set<char>>::operator[](a1, 97LL);
+  v28 = 53;
+  std::set<char>::insert(v14, (__int64)&v28);
+  v15 = std::vector<std::set<char>>::operator[](a1, 84LL);
+  v28 = 70;
+  std::set<char>::insert(v15, (__int64)&v28);
+  v16 = std::vector<std::set<char>>::operator[](a1, 70LL);
+  v28 = 67;
+  std::set<char>::insert(v16, (__int64)&v28);
+  v17 = std::vector<std::set<char>>::operator[](a1, 95LL);
+  v28 = 106;
+  std::set<char>::insert(v17, (__int64)&v28);
+  v18 = std::vector<std::set<char>>::operator[](a1, 97LL);
+  v28 = 121;
+  std::set<char>::insert(v18, (__int64)&v28);
+  v19 = std::vector<std::set<char>>::operator[](a1, 53LL);
+  v28 = 98;
+  std::set<char>::insert(v19, (__int64)&v28);
+  v20 = std::vector<std::set<char>>::operator[](a1, 103LL);
+  v28 = 111;
+  std::set<char>::insert(v20, (__int64)&v28);
+  v21 = std::vector<std::set<char>>::operator[](a1, 100LL);
+  v28 = 32;
+  std::set<char>::insert(v21, (__int64)&v28);
+  v22 = std::vector<std::set<char>>::operator[](a1, 95LL);
+  v28 = 81;
+  std::set<char>::insert(v22, (__int64)&v28);
+  v23 = std::vector<std::set<char>>::operator[](a1, 53LL);
+  v28 = 102;
+  std::set<char>::insert(v23, (__int64)&v28);
+  v24 = std::vector<std::set<char>>::operator[](a1, 53LL);
+  v28 = 115;
+  std::set<char>::insert(v24, (__int64)&v28);
+  v25 = std::vector<std::set<char>>::operator[](a1, 115LL);
+  v28 = 95;
+  std::set<char>::insert(v25, (__int64)&v28);
+  v26 = std::vector<std::set<char>>::operator[](a1, 81LL);
+  v28 = 105;
+  std::set<char>::insert(v26, (__int64)&v28);
+  return v29 - __readfsqword(0x28u);
+}
