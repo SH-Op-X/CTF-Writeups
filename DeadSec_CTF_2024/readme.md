@@ -379,82 +379,6 @@ __int64 sub_2B3C()
 ~~~c
 __int64 sub_1F3B()
 {
-  __int64 v0; // r15
-  __int64 v1; // r13
-  __int64 v2; // r14
-  __int64 v3; // r12
-  __int64 v4; // rbx
-  __int64 v5; // rax
-  __int64 v6; // r14
-  __int64 v7; // r12
-  __int64 v8; // r15
-  __int64 v9; // r13
-  __int64 v10; // rbx
-  __int64 v11; // rax
-  __int64 v12; // r15
-  __int64 v13; // r14
-  __int64 v14; // r13
-  __int64 v15; // r12
-  __int64 v16; // rbx
-  __int64 v17; // rax
-  __int64 v18; // r12
-  __int64 v19; // rbx
-  __int64 v20; // r15
-  __int64 v21; // r14
-  __int64 v22; // r13
-  __int64 v23; // rax
-  __int64 v24; // r14
-  __int64 v25; // r13
-  __int64 v26; // r12
-  __int64 v27; // rbx
-  __int64 v28; // r15
-  __int64 v29; // rax
-  __int64 v30; // r14
-  __int64 v31; // r13
-  __int64 v32; // r12
-  __int64 v33; // rbx
-  __int64 v34; // rax
-  __int64 result; // rax
-  __int64 v36; // [rsp-8h] [rbp-1C8h]
-  __int64 v37; // [rsp+0h] [rbp-1C0h]
-  __int64 v38; // [rsp+0h] [rbp-1C0h]
-  __int64 v39; // [rsp+0h] [rbp-1C0h]
-  __int64 v40; // [rsp+8h] [rbp-1B8h]
-  __int64 v41; // [rsp+8h] [rbp-1B8h]
-  __int64 v42; // [rsp+8h] [rbp-1B8h]
-  __int64 v43; // [rsp+10h] [rbp-1B0h]
-  __int64 v44; // [rsp+10h] [rbp-1B0h]
-  __int64 v45; // [rsp+10h] [rbp-1B0h]
-  __int64 v46; // [rsp+18h] [rbp-1A8h]
-  __int64 v47; // [rsp+18h] [rbp-1A8h]
-  __int64 v48; // [rsp+18h] [rbp-1A8h]
-  __int64 v49; // [rsp+20h] [rbp-1A0h]
-  __int64 v50; // [rsp+20h] [rbp-1A0h]
-  __int64 v51; // [rsp+28h] [rbp-198h]
-  __int64 v52; // [rsp+28h] [rbp-198h]
-  __int64 v53; // [rsp+30h] [rbp-190h]
-  __int64 v54; // [rsp+38h] [rbp-188h]
-  __int64 v55; // [rsp+60h] [rbp-160h]
-  __int64 v56; // [rsp+68h] [rbp-158h]
-  __int64 v57; // [rsp+70h] [rbp-150h]
-  __int64 v58; // [rsp+78h] [rbp-148h]
-  __int64 v59; // [rsp+80h] [rbp-140h]
-  __int64 v60; // [rsp+88h] [rbp-138h]
-  __int64 v61; // [rsp+138h] [rbp-88h]
-  __int64 v62; // [rsp+140h] [rbp-80h]
-  __int64 v63; // [rsp+148h] [rbp-78h]
-  __int64 v64; // [rsp+148h] [rbp-78h]
-  __int64 v65; // [rsp+150h] [rbp-70h]
-  __int64 v66; // [rsp+150h] [rbp-70h]
-  __int64 v67; // [rsp+158h] [rbp-68h]
-  __int64 v68; // [rsp+158h] [rbp-68h]
-  __int64 v69; // [rsp+158h] [rbp-68h]
-  __int64 v70; // [rsp+158h] [rbp-68h]
-  int i; // [rsp+16Ch] [rbp-54h]
-  __int64 v72; // [rsp+170h] [rbp-50h]
-  __int64 v73; // [rsp+178h] [rbp-48h]
-  __int64 Item; // [rsp+188h] [rbp-38h]
-
   v72 = sub_13ED(qword_6780, "钩靖");	// 同前 FLAG
   v73 = PyList_Size();
   for ( i = 0; v73 > i; ++i )
@@ -605,26 +529,6 @@ __int64 sub_1F3B()
 ~~~c
 __int64 sub_1DBC()
 {
-  __int64 v0; // r15
-  __int64 v1; // r14
-  __int64 v2; // r13
-  __int64 v3; // r12
-  __int64 v4; // rbx
-  __int64 v5; // rax
-  __int64 v6; // rax
-  __int64 v7; // rdx
-  __int64 v8; // rcx
-  __int64 v9; // r8
-  __int64 v10; // r9
-  __int64 v11; // rax
-  __int64 v13; // [rsp+0h] [rbp-60h]
-  __int64 v14; // [rsp+8h] [rbp-58h]
-  __int64 v15; // [rsp+10h] [rbp-50h]
-  __int64 v16; // [rsp+18h] [rbp-48h]
-  __int64 v17; // [rsp+20h] [rbp-40h]
-  __int64 v18; // [rsp+30h] [rbp-30h]
-  __int64 v19; // [rsp+38h] [rbp-28h]
-
   v16 = PyBytes_FromString(&unk_3011);
   v0 = sub_1491(&unk_3011);
   v1 = sub_1491(&unk_3011);
