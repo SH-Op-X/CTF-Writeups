@@ -1,0 +1,120 @@
+题目介绍：在很久很久以前有一个传说，只有天才才能进入天才俱乐部，那么去破解吧，现在已知的信息是，据说这个创始人生日在1975年4月5日
+（有点中二，致敬中本聪），它的地址在：0xA6c32E00CA2E1F9dD6F376c2C4B6290F786A3582
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.24;
+
+contract easy {
+    mapping(address => bool) public flag;
+    uint256 random;
+
+    constructor(uint256 _random) {
+        uint256 random = _random;
+    }
+
+    function only_Member_Know_Secret(uint256 number) public returns(bool) {
+        uint256 random_middle = uint256(
+            keccak256(
+                abi.encodePacked(
+                    blockhash(block.number),  
+                    block.timestamp
+                )
+            )
+        );
+        return number == random + (uint256(uint160(msg.sender)) + random_middle);
+        
+    }
+
+    function get_your_flag(uint256 number) public  returns (bool){
+        require(only_Member_Know_Secret(number), "You cannot pass through here due to permission issues");
+        flag[msg.sender] = true;
+        return true;
+    }
+
+    function check(address addr) external view returns(bool) {
+        return flag[addr];
+    }
+}
+
+题目介绍：最近小美参加的一个项目被黑客攻击了，请求你去做链上支援
+地址在：0x158018fB187206a7311b20c6b90057Fd54918ec2
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.24;
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+//nonReentrant
+contract logical_contract is ReentrancyGuard,ERC20{
+    mapping(address => bool) private hasRegistered;
+    uint256 constant rate_from_this_token_to_ETH = 1;
+    uint256 initialSupply;
+    constructor(uint256 _initialSupply) ERC20("Flag Tokens", "FLAG_TOKENS") payable {
+        _mint(address(this), _initialSupply * (10 ** uint256(decimals())));
+        uint256 initialSupply=_initialSupply;
+    }
+    modifier onlyOnce() {
+        require(!hasRegistered[msg.sender], "You have already registered.");
+        _;
+        hasRegistered[msg.sender] = true; 
+    }
+
+    function register() public onlyOnce {
+        bool succ=this.transfer(msg.sender, 1 ether);
+        require(succ==true,"something wrong");
+    }
+
+    function emergency_deal_with_your_token(uint256 amount) public nonReentrant returns(bool){
+        //Triggered when you are very eager to get ETH, but the price is lower than Market prices
+        //Remember to note that there are nonReentrant modifier symbols here
+        this.transfer(msg.sender,1 ether);
+        //to avoid problem when amount == 0 go wrong,I transfer a little number
+        require(this.balanceOf(msg.sender)>=amount,"No money");
+        uint256 ten_percent = amount / 10; 
+        if(address(this).balance <= amount*rate_from_this_token_to_ETH*ten_percent){
+            payable(address(msg.sender)).call{value: payable(address(this)).balance}("");
+        }
+        else{
+            payable(address(msg.sender)).call{value: amount*rate_from_this_token_to_ETH*ten_percent}("");
+        }
+        _burn(msg.sender, amount+1 ether);
+        //from my perspective，burning is a good way better than transfer for the market.
+        return true;
+    }
+}
+contract setup is logical_contract{
+    address owner;
+    mapping (address => bool) public flag;
+     constructor(uint256 initialSupply) payable logical_contract(initialSupply){
+        owner = msg.sender;
+    }
+    modifier onlyOwner {
+        require(msg.sender == owner,"You cannot pass through here due to permission issues");
+        _; 
+    }
+    modifier onlyInternal() {
+        require(msg.sender == address(this), "This function can only be called internally.");
+        _;
+    }
+    function transfer(address to, uint256 value)public  override onlyInternal returns (bool) {
+        address owner = _msgSender();
+        _transfer(owner, to, value);
+        return true;
+    }
+    function transferFrom(address from, address to, uint256 value) public override onlyInternal returns (bool) {
+        address spender = _msgSender();
+        _spendAllowance(from, spender, value);
+        _transfer(from, to, value);
+        return true;
+    }
+    
+    function get_your_flag(address paste_your_address) public{
+        require(this.balanceOf(paste_your_address)>1 ether,"You're not qualified yet");
+        flag[paste_your_address] = true;
+    }
+    function Solve_the_problem(address paste_your_address) public onlyOwner{
+        if(this.balanceOf(address(this))>initialSupply)
+        flag[paste_your_address] = true;
+    }
+    function check(address addr) external view returns(bool){
+        return flag[addr];
+    }
+}
+
