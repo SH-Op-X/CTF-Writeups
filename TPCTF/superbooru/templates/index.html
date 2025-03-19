@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+
+<a
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 block w-fit cursor-pointer"
+  href="{{ url_for('new_image') }}"
+>
+  Create
+</a>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+  {% for image in images %}
+  <a
+    href="{{ url_for('image', id=image.id) }}"
+    class="relative bg-white rounded-lg shadow-lg overflow-clip group"
+  >
+    <img src="{{ image.url }}" class="h-64 w-full object-cover" />
+    <div
+      class="opacity-0 group-hover:opacity-100 transition-opacity absolute inset-x-0 bottom-0 max-h-24 bg-black/40 p-2"
+    >
+      {% include "tags.html" %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock content %}

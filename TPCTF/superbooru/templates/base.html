@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/static/tailwind.js"></script>
+    <title>Superbooru</title>
+  </head>
+
+  <body class="bg-red-200 px-16 md:px-32 lg:px-64 pt-12">
+    <div class="flex items-end">
+      <a
+        class="text-5xl from-cyan-500 to-blue-300 bg-linear-to-r bg-clip-text font-black text-transparent"
+        href="{{ url_for('root') }}"
+      >
+        Superbooru
+      </a>
+      <span class="ml-2 text-black/30 italic">Tag your fav pics!!!</span>
+    </div>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>

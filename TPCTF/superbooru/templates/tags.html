@@ -1,0 +1,8 @@
+<div class="leading-7">
+  {% for tag in (image.tags | sort()) %}
+  <span
+    class="bg-indigo-400 text-white text-lg px-2 py-1 rounded-full text-sm"
+    >{{ tag }}</span
+  >
+  {% endfor %}
+</div>
