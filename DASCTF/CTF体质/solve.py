@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+import phoenixAES
+
+with open('tracefile', 'wb') as t:
+    t.write("""
+db997e69af7daf43bfadaa94bc68bbef
+9b997e69af7daf52bfad4494bc64bbef
+db997e93af7d2043bf20aa94a968bbef
+db99de69af8aaf43bbadaa94bc68bbfc
+db237e69417daf43bfadaa8cbc68c7ef
+dbef7e69ef7daf43bfadaac5bc6822ef
+b8997e69af7dafd3bfadbc94bc56bbef
+db997e69af7daf43bfadaa94bc68bbef
+db99f569af4aaf43deadaa94bc68bbf4
+db99d669afcaaf43ebadaa94bc68bb00
+db4b7e69c07daf43bfadaa86bc68bdef
+c0997e69af7dafdcbfad5a94bc03bbef
+db997e5baf7d5a43bf22aa943b68bbef
+db997ed4af7da743bfc3aa941068bbef
+db995969af5aaf437aadaa94bc68bb5f
+db057e697a7daf43bfadaa6cbc684cef
+a2997e69af7dafd8bfad6694bc18bbef
+""".encode('utf8'))
+
+phoenixAES.crack_file('tracefile')
+# Last round key #N found:
+# 040D08DA68001026F3DC0D68897148B4
